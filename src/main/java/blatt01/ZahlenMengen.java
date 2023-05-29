@@ -7,7 +7,7 @@ public class ZahlenMengen {
 		double b = 5;
 		a = a / 2;
 		b = b / 2;
-		System.out.println(a + "\r\n" + b);
+		System.out.println(a + "\r" + b);
 
 	}
 
