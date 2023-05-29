@@ -23,5 +23,5 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Test
-      run: mvn -B -Dtest=RechnerTests test
+      run: mvn -B test
     
