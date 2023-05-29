@@ -13,7 +13,7 @@ public class Blatt01Tests {
     private static final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Before
-    public void prepareation(){
+    public void preparation(){
         System.setOut(new PrintStream(outContent));
     }
     @After
