@@ -26,8 +26,8 @@ jobs:
         java-version: '17'
         distribution: 'zulu'
         cache: maven
-    - name: Build with Maven
+    - name: Build 
       run: mvn -B package --file pom.xml
     - name: Test
-      run: mvn test
+      run: mvn -Dtest=Blatt01Tests test
     
