@@ -11,7 +11,7 @@ name: Java Test
 on: [push]
 
 jobs:
-  build:
+  tests-blatt01:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,5 +23,5 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Test
-      run: mvn -B -Dtest=RechnerTests#test1 test
+      run: mvn -B -Dtest=RechnerTests test
     
