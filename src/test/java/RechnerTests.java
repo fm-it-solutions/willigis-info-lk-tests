@@ -37,10 +37,10 @@ public class RechnerTests {
     @Test
     public void test2(){
         Rechner.printAdd(2,3);
-        assertEquals("5\r\n", outContent.toString());
+        assertEquals("5" +System.lineSeparator(), outContent.toString());
         outContent.reset();
         Rechner.printAdd(-2,3);
-        assertEquals("1\r\n", outContent.toString());
+        assertEquals("1" +System.lineSeparator(), outContent.toString());
 
 
 

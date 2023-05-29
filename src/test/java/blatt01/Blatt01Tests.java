@@ -24,13 +24,13 @@ public class Blatt01Tests {
     @Test
     public void MyFirstProgramTest(){
         MyFirstProgram.main(null);
-        assertEquals("Hello World!\r\n",outContent.toString());
+        assertEquals("Hello World!" + System.lineSeparator(),outContent.toString());
     }
 
     @Test
     public void StringCodesTest(){
         StringCodes.main(null);
-        String s = "Monat\t\t\tGewinn\r\nSeptember 2017\t221.000 €\r\nOktober 2017\t1.009.520 €\r\n";
+        String s = "Monat\t\t\tGewinn"+ System.lineSeparator() +"September 2017\t221.000 €" + System.lineSeparator() + "Oktober 2017\t1.009.520 €" +System.lineSeparator();
         assertEquals(s,outContent.toString());
     }
 }
