@@ -29,7 +29,7 @@ public class RechnerTests {
 
     @Test
     public void test1(){
-        assertEquals(3, Rechner.add(1,3));
+        assertEquals(4, Rechner.add(1,3));
         assertEquals(-2, Rechner.add(1,-3));
         assertEquals(10, Rechner.add(5,5));
     }
