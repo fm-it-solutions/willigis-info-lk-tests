@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java Test
+name: Aufgabenblatt 01 Tests
 
 on: [push]
 
@@ -23,5 +23,5 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Test
-      run: mvn -B -Dtest=* test
+      run: mvn -B -Dtest=Blatt01Tests#* test
     
