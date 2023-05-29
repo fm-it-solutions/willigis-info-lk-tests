@@ -24,20 +24,20 @@ public class Blatt01Tests {
     @Test
     public void MyFirstProgramTest(){
         MyFirstProgram.main(null);
-        assertEquals("Test passes if output equals 'Hello World!'","Hello World!" + System.lineSeparator(),outContent.toString());
+        assertEquals("Test passes if output equals 'Hello World!': ","Hello World!" + System.lineSeparator(),outContent.toString());
     }
 
     @Test
     public void StringCodesTest(){
         StringCodes.main(null);
         String s = "Monat\t\t\tGewinn"+ System.lineSeparator() +"September 2017\t221.000 €" + System.lineSeparator() + "Oktober 2017\t1.009.520 €" +System.lineSeparator();
-        assertEquals("Test checks if String is exact like the exercise example (tip: use \\t)",s,outContent.toString());
+        assertEquals("Test checks if String is exact like the exercise example (tip: use \\t): ",s,outContent.toString());
     }
 
     @Test
     public void ZuweisungenTest(){
         Zuweisungen.main(null);
-        assertEquals("Test passes if output equals 2","2" + System.lineSeparator(),outContent.toString());
+        assertEquals("Test passes if output equals 2: ","2" + System.lineSeparator(),outContent.toString());
     }
 
     @Test
@@ -59,8 +59,8 @@ public class Blatt01Tests {
         double zinsen = Double.parseDouble(output.substring(posStart+2,output.indexOf(" ",posStart+2)));
         posStart = output.indexOf(": ",posStart+1);
         double kapitalNeu = Double.parseDouble(output.substring(posStart+2,output.indexOf(" ",posStart+2)));
-        assertEquals("Test checks 'Zinsen'",kapitalAlt*zinssatz/100,zinsen);
-        assertEquals("Test checks 'Neues Kapital'",kapitalAlt*(100 + zinssatz)/100 , kapitalNeu);
+        assertEquals("Test checks 'Zinsen': ",kapitalAlt*zinssatz/100,zinsen);
+        assertEquals("Test checks 'Neues Kapital': ",kapitalAlt*(100 + zinssatz)/100 , kapitalNeu);
     }
 
     @Test
@@ -75,7 +75,7 @@ public class Blatt01Tests {
         double micro = Double.parseDouble(output.substring(posStart+1,output.indexOf(" ",posStart+1)));
         posStart = output.indexOf(System.lineSeparator(),posStart+1);
         double gesamt = Double.parseDouble(output.substring(output.indexOf(" ",posStart+1),output.length()-3));
-        assertEquals("Test checks total price of SD-cards",normal*5+mini*8+micro*12,gesamt);
+        assertEquals("Test checks total price of SD-cards: ",normal*5+mini*8+micro*12,gesamt);
     }
 
     @Test

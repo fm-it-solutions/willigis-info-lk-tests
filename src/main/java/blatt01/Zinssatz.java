@@ -8,7 +8,7 @@ public class Zinssatz {
 		double c = a * b / 100;
 		double d = a + c;
 		System.out.println("Altes Kapital: " + a + " €" + "\n" + "Zinssatz: " + b + " %" + "\n\n" + "Zinsen: " + c
-				+ " �" + "\n" + "Neues Kapital: " + d + " €");
+				+ " €" + "\n" + "Neues Kapital: " + d + " €");
 	}
 
 }
