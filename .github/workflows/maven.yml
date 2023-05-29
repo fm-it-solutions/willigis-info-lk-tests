@@ -23,5 +23,5 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Test
-      run: mvn -B test
+      run: mvn -B "-Dtest=de.fm-it-solutions.*" test
     
