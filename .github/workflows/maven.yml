@@ -25,5 +25,5 @@ jobs:
     - name: Build 
       run: mvn -B package --file pom.xml
     - name: Test
-      run: mvn -Dtest=RechnerTests test
+      run: mvn -B -Dtest=RechnerTests test
     
