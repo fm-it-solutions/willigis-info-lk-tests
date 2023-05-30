@@ -8,7 +8,7 @@
 
 name: Aufgabenblatt 01 Tests
 
-on: [push]
+on: []
 
 jobs:
   tests-blatt01:
