@@ -8,7 +8,7 @@
 
 name: Aufgabenblatt 01 Tests
 
-on: []
+on: [push]
 
 jobs:
   tests-blatt01:
@@ -23,5 +23,5 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Test
-      run: mvn -B -Dtest=Blatt01Tests#* test
+      run: mvn -B -Dtest=Blatt01Tests test
     

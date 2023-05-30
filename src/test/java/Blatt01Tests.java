@@ -11,6 +11,7 @@ import static junit.framework.TestCase.*;
 
 public class Blatt01Tests {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final PrintStream defaultOut = System.out;
 
     @Before
     public void preparation(){
@@ -19,6 +20,7 @@ public class Blatt01Tests {
     @After
     public void cleaning(){
         outContent.reset();
+        System.setOut(defaultOut);
     }
 
     @Test

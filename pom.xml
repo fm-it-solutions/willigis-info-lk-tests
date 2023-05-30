@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.fm-it-solutions</groupId>
-    <artifactId>JUnits</artifactId>
+    <artifactId>info-lk-tests</artifactId>
     <version>1.0</version>
 
     <properties>
