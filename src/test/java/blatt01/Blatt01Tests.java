@@ -1,5 +1,7 @@
 package blatt01;
 
+import blatt01.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
