@@ -1,4 +1,4 @@
-import blatt01.*;
+package blatt01;
 
 import org.junit.After;
 import org.junit.Before;
